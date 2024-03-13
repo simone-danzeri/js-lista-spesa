@@ -16,6 +16,8 @@ let myLi = document.querySelector('#list');
 console.log(myLi);
 
 for (let i = 0; i < list.length; i++) {
-    myLi.innerHTML += `<li>${list[i]}</li>`;
+    let eachLi = list[i];
+    // Stampo in pagina i vari <li> --> Uso += perchè altrimenti mi stampa solo l'ultimo
+    myLi.innerHTML += `<li>${eachLi}</li>`;
     // console.log(list[i]);
 }
